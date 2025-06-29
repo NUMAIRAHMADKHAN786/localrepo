@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <div class="searchbar">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="cart"> 
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="login">
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Section -->
+    <section class="shopping-cart">
+        <div class="cart-left">
+            <h1>Shopping Cart</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nike Sneakers for Men</td>
+                        <td>1</td>
+                        <td>₹1,334</td>
+                        <td><button class="remove-item">X</button></td>
+                    </tr>
+                    <!-- Repeat rows as needed -->
+                </tbody>
+            </table>
+            <a href="shop.html" class="continue-shopping">← Continue Shopping</a>
+        </div>
+        <div class="cart-right">
+            <h2>Order Summary</h2>
+            <div class="coupon-section">
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+            <p>Sub Total: ₹1,334</p>
+            <p>Taxes (if applicable):₹0</p>
+            <p>Discount: ₹0</p>
+            <h3>Total: ₹1,334</h3>
+            <a href="payment.html"><button class="pay-now">Pay Now ₹1,334</button></a>
+            <div class="payment-icons">
+                <img src="razorpay.png" alt="Razorpay">
+                <img src="secure-icon.jpg" alt="Secure">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

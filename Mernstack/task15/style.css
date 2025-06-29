@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 2rem;
+    margin: 20px 0;
+    background-color: #f8f9fa; /* Light gray background for the header */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Subtle border for separation */
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between boxes */
+    margin: 20px 0;
+}
+
+.box {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000; /* Slightly thicker border */
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize; /* Capitalize text */
+    color: white; /* Default text color */
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.box:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+#red {
+    background-color: #f8d7da;
+  }
+  
+  #blue {
+    background-color: #dbeafe;
+  }
+  
+  #green {
+    background-color: #d1e7dd;
+  }
+  
+  #yellow {
+    background-color: #fff3cd;
+  }
+
+.input-section {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Fixed width for input */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light gray background */
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}

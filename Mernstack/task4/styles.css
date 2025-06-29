@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Logo, menu, and username */
+    align-items: center;
+}
+
+.navbar-logo {
+    justify-self: start; /* Align the logo to the start */
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust the logo size */
+}
+
+.navbar-menu {
+    text-align: center;
+}
+
+.navbar-menu a {
+    text-decoration: none;        
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.username {
+    justify-self: end; 
+    background-color: rgb(129, 202, 236);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.username:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hero Section Styling */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+    width: 100%;
+    height: 100vh; 
+    padding: 80px 20px;
+    background-color: #f4f4f4;
+    align-items: center;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #666;
+}
+
+.hero-text .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-image img {
+    width: 80%;
+    max-height: 70vh;
+}

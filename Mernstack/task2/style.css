@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(255, 184, 97);
+}
+.head{
+    color:darkblue;
+}
+#bglime{
+    background-color: lime;
+    font-size:35px;
+}
+#red{
+    color: red;
+}
+p{
+    color:#ffff;
+    font-size: 20px;
+}
+#para{
+    color:rgb(23, 163, 23)
+}
+#para1{
+    color:black;
+    font-size:25px;
+}
+.text1{
+    font-size:20px;
+}

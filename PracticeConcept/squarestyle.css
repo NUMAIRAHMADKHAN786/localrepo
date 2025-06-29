@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding :0;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.rect{
+    display:flex;
+}
+.box{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    font-family: 'Monteserrat';
+  
+}
+.shape{
+    height:200px;
+    width:200px;
+    border:2px solid black;
+    font-family: 'Monteserrat';
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
