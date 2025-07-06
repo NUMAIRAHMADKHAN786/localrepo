@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Booking Web App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">ServiceBook</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="user-info">
+      <span id="username">Welcome, Aman</span>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Left Section: Cart & Booking -->
+    <div class="left-section">
+      <h3>Added Items</h3>
+      <ul class="cart-list" id="cartList">
+        <li id="emptyCartMsg">No items added yet.</li>
+      </ul>
+      <div class="total-amount">Total: ₹<span id="totalAmount">0</span></div>
+      <form class="booking-form" id="bookingForm">
+        <h4>Book Now</h4>
+        <input type="text" id="fullName" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+    <!-- Right Section: Browse Services -->
+    <div class="right-section">
+      <h2>Browse Our Services</h2>
+      <p>Explore our top-rated services and add them to your cart for booking!</p>
+      <div class="services-list" id="servicesList">
+        <!-- Services will be rendered here -->
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
