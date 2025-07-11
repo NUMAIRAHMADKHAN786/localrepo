@@ -1,5 +1,4 @@
-
-    // Sample services data
+ // Sample services data
     const services = [
       {
         id: 1,
@@ -45,6 +44,7 @@
         `;
         servicesList.appendChild(card);
       });
+      // he.
     }
 
     // Add to cart
@@ -53,8 +53,9 @@
       if (!cart.some(item => item.id === serviceId)) {
         cart.push(service);
         renderCart();
+        showBookingMessage(""); // Clear any previous message
       } else {
-        alert("Service already added!");
+        showBookingMessage(`<span style="color:red;">Service already added!</span>`);
       }
     }
 
@@ -93,6 +94,7 @@
     function removeFromCart(serviceId) {
       cart = cart.filter(item => item.id !== serviceId);
       renderCart();
+      showBookingMessage(""); // Clear any previous message
     }
 
     // Update total
@@ -101,15 +103,20 @@
       document.getElementById('totalAmount').innerText = total;
     }
 
+    // Show booking message
+    function showBookingMessage(msg) {
+      document.getElementById('bookingMessage').innerHTML = msg;
+    }
+
     // Booking form submit
     document.getElementById('bookingForm').addEventListener('submit', function(e) {
       e.preventDefault();
       if (cart.length === 0) {
-        alert("Please add at least one service to book.");
+        showBookingMessage(`<span style="color:red;">Please add at least one service to book.</span>`);
         return;
       }
       const name = document.getElementById('fullName').value;
-      alert(`Thank you, ${name}! Your booking for ${cart.length} service(s) is confirmed.`);
+      showBookingMessage(`<span style="color:green;">Thank you, ${name}! Your booking for ${cart.length} service(s) is confirmed.</span>`);
       cart = [];
       renderCart();
       this.reset();
@@ -117,11 +124,10 @@
 
     // Logout
     function logout() {
-      alert("Logged out!");
-      // Redirect or clear session here
+      showBookingMessage(`<span style="color:blue;">You have been logged out.</span>`);
+      // You can add redirect or session clear logic here
     }
 
     // Initial render
     renderServices();
     renderCart();
-  

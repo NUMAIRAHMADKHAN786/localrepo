@@ -12,6 +12,7 @@ function App() {
     // counter=counter+1
  }
   const removeValue=()=>{
+    // 
     setCounter(counter-1)
     console.log('Button clicked', counter);
     
