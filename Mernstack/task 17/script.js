@@ -25,7 +25,6 @@
         img: "https://images.unsplash.com/photo-1503389152951-9c3d8b6e9c94?auto=format&fit=crop&w=400&q=80"
       }
     ];
-
     let cart = [];
 
     // Render services
@@ -131,3 +130,8 @@
     // Initial render
     renderServices();
     renderCart();
+
+    function gitinto() {
+    window.location.href="";
+    }
+ 
