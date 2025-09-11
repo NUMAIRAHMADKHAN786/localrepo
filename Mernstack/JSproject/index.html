@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Laundry Services - Professional Care & Convenience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <span class="logo-icon">🧺</span>
+                    <span class="logo-text">LaundryPro</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </div>
+                <button class="btn-subscribe">Subscribe</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">Revitalize Your Clothes with Expert Laundry Services!</h1>
+                    <p class="hero-subtitle">From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                    <button class="btn-primary" id="book-service-btn">Book a service today</button>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-illustration">
+                        <div class="washing-machine">
+                            <div class="machine-body"></div>
+                            <div class="machine-door"></div>
+                            <div class="machine-control"></div>
+                        </div>
+                        <div class="detergent-boxes">
+                            <div class="detergent-box box-1"></div>
+                            <div class="detergent-box box-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Achievements Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="achievements-title">Our Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-number">15+</div>
+                    <div class="achievement-text">Laundry Services</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">240+</div>
+                    <div class="achievement-text">Happy Customers</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">2+</div>
+                    <div class="achievement-text">Yrs Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="services-content">
+                <div class="services-left">
+                    <h2 class="services-title">Our Services</h2>
+                    <p class="services-subtitle">Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    
+                    <div class="services-list" id="services-list">
+                        <!-- Services will be populated by JavaScript -->
+                    </div>
+                    
+                    <p class="cart-instruction">Add the items to the cart and book now</p>
+                </div>
+
+                <div class="services-right">
+                    <div class="added-items-section">
+                        <h3 class="added-items-title">Added Items</h3>
+                        <div class="cart-header">
+                            <div class="cart-col">S.No</div>
+                            <div class="cart-col">Service Name</div>
+                            <div class="cart-col">Price</div>
+                        </div>
+                        <div class="cart-items" id="cart-items">
+                            <!-- Cart items will be populated by JavaScript -->
+                        </div>
+                        <div class="total-amount">
+                            <strong>Total Amount: ₹<span id="total-amount">0</span></strong>
+                        </div>
+                    </div>
+
+                    <div class="booking-form-section">
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-group">
+                                <input type="text" id="fullName" class="form-input" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-input" placeholder="Email ID" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-input" placeholder="Phone Number" required>
+                            </div>
+                            <button type="submit" class="btn-book-now">Book now</button>
+                        </form>
+                        <div id="booking-message" class="booking-message hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Features Section -->
+    <section id="about" class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3 class="feature-title">Premium Services</h3>
+                    <p class="feature-description">High-quality laundry care with premium standards</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3 class="feature-title">Quick Support</h3>
+                    <p class="feature-description">Fast customer support and assistance</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Hassle Free Delivery</h3>
+                    <p class="feature-description">Convenient pickup and delivery service</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3 class="feature-title">Affordable Prices</h3>
+                    <p class="feature-description">Competitive pricing for all services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Subscribe to our newsletter</h2>
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required>
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+                <div id="newsletter-message" class="newsletter-message hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🧺</span>
+                        <span class="logo-text">LaundryPro</span>
+                    </div>
+                    <p class="footer-about">About us</p>
+                    <p class="footer-description">Professional laundry services with premium care and convenient pickup & delivery for all your clothing needs.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="#terms">Terms of use</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="contact-info">
+                        <p>📞 +91 98765 43210</p>
+                        <p>📧 contact@laundrypro.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-link">📘</a>
+                    <a href="#" target="_blank" class="social-link">🐦</a>
+                    <a href="#" target="_blank" class="social-link">📸</a>
+                    <a href="#" target="_blank" class="social-link">💼</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,39 +1,36 @@
-// // function DoSomething() {
-// //     console.log("Doing something!");
-// // }
+const { StatementSync } = require("node:sqlite");
 
-// // const dosomething=()=>{
-// //     console.log("Doing something else!");
-// // }
-// // // ternary operator 
-// // if (true){
+function myFunction(p1,p2){
+    return p1* p2;
+}
+console.log(myFunction(4,3));
 
-// // }else{
+function toCelcius(fahrenheit){
+    return(5/9)*(fahrenheit-32);
+}
+console.log(toCelcius(77));
+
+const fruit=function(a,b){
+    return a*b;
+}
+console.log(fruit(4,3));
+
+const fruit1=(a,b) => a*b;
+console.log(fruit1(5,5));
+
+const greet=()=>"hello world";
+console.log(greet());
 
 
-// // }
-// // // let age=10;
-// // // let name=age>10?"John":"Jane";
+let hello=()=>{
+    return "hello world";
+}
+console.log(hello());
 
-// // const xompoent=()=>{
-// //     return age>10?<div>Pedro</div>:<div>Jack</div>
-// // }
-// // //  objects
-// // const person={
-// //     name:"pedro",
-// //     age:30,
-// //     ismarried:true,
+let hello1=(val)=>"Hello world"+val;
+console.log(hello1(5));
 
-// // };
-// // const { name, age, ismarried}=person;
 
-// // map filter reduce
-// let names=["pedro","jack","jill","john"];
-// for (let i=0;i<names.length;i++){
-//     console.log(names[i]);
-// }
-// names.map((name)=>{
-//     console.log(name);
-// })
-
-// async,await fetch
+// basic foundation
+// control Statement
+// function and dom 

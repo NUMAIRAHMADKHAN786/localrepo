@@ -1,0 +1,469 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#e6e1cb;
+    color: #000000;
+}
+
+.logo img {
+    height: 80px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu ul li  :hover {
+    background-color: #000000;
+    color:#fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchbar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-left h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-left p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.hero-left .shop-now {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.shop-now:hover {
+    background-color: #f27725;
+    transform: rotate(-2deg);
+    translate:initial(-2px);
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.hero-right img {
+   
+    height: 50%;
+    width:50%;
+    padding-left: 260px;
+}
+
+/* Service Overview Section */
+.service-overview {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top:70px;
+}
+
+.service-item h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+/* Product Display Page */
+.product-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.product-left img {
+    max-width: 400px;
+    border:2px solid black;
+    border-radius:3px;
+}
+
+.product-right {
+    max-width: 50%;
+}
+
+.product-right h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.product-right p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.product-right h2 {
+    color: #ff6600;
+    margin: 10px 0;
+}
+
+.quantity-section {
+    margin: 20px 0;
+}
+
+.quantity-section input {
+    width: 50px;
+    padding: 5px;
+}
+
+.add-to-cart {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+ .gallery-container img  {
+    display:inline-flex;
+    
+    align-items: center;
+    width:150px;
+    height: 150px;
+    margin-left: 30px;
+    border:2px solid black;
+   
+}
+/* Shopping Cart Page */
+.shopping-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.cart-left {
+    width: 60%;
+}
+
+.cart-left table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-left table th, .cart-left table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-left .continue-shopping {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.cart-right {
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.cart-right h2 {
+    margin-bottom: 20px;
+}
+
+.cart-right .coupon-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cart-right .coupon-section input {
+    flex: 1;
+    padding: 5px;
+}
+
+.cart-right .coupon-section button {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-right .pay-now {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.payment-icons img {
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* Payment Page */
+.payment-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.payment-left {
+    width: 60%;
+}
+
+.payment-left form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment-right {
+    width: 35%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.payment-right h2 {
+    margin-bottom: 20px;
+}
+
+.payment-right .coupon-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-right .coupon-section input {
+    flex: 1;
+    padding: 5px;
+}
+
+.payment-right .coupon-section button {
+    padding: 5px 10px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-right .pay-now {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Contact Form Styles */
+.contact-section {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    text-align: center;
+}
+.contact-section h2 {
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.contact-section p {
+    color: #666;
+    margin-bottom: 24px;
+}
+.contact-form .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    padding: 10px 12px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: border 0.2s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e90ff;
+    outline: none;
+    background: #fff;
+}
+.contact-btn {
+    background: linear-gradient(90deg, #1e90ff 60%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(30,144,255,0.08);
+}
+.contact-btn:hover {
+    background: linear-gradient(90deg, #00c6ff 60%, #1e90ff 100%);
+    box-shadow: 0 4px 16px rgba(30,144,255,0.16);
+}
+
+
+/* Responsive Design for All Devices */
+@media (max-width: 1200px) {
+    .hero, .product-display, .shopping-cart, .payment-section {
+        padding: 30px;
+    }
+    .contact-section {
+        max-width: 90%;
+        padding: 24px 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar, .service-overview, .product-display, .shopping-cart, .payment-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    .hero-left, .hero-right,
+    .product-left, .product-right,
+    .cart-left, .cart-right,
+    .payment-left, .payment-right {
+        max-width: 100%;
+        width: 100%;
+    }
+    .gallery-container img {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.95rem;
+    }
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .logo img {
+        height: 60px;
+        width: 80px;
+    }
+    .hero {
+        padding: 10px;
+    }
+    .hero-left h1 {
+        font-size: 1.5rem;
+    }
+    .product-display, .shopping-cart, .payment-section {
+        padding: 10px;
+    }
+    .contact-section {
+        padding: 10px 5px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.95rem;
+        padding: 8px 8px;
+    }
+    .contact-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-section h2 {
+        font-size: 1.2rem;
+    }
+    .contact-btn {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+}

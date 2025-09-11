@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="product.html">PRODUCTS</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="payment.html">PAYMENT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <div class="searchbar">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="cart"> 
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+                <div class="login">
+                    <a href="login.html"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="payment-left">
+            <h1>Checkout</h1>
+            <label for="email">Email ID</label>
+            <input type="email" id="email" placeholder="John Doe">
+            <h2>Payment</h2>
+            <div class="payment-options">
+                <button>Card</button>
+                <button>Crypto</button>
+                <button>Bank</button>
+            </div>
+            <form>
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiry">
+                <input type="text" placeholder="CVC">
+                <input type="text" placeholder="Country">
+                <input type="text" placeholder="ZIP">
+            </form>
+        </div>
+        <div class="payment-right">
+            <h2>Order Summary</h2>
+            <div class="coupon-section">
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply Coupon</button>
+            </div>
+            <p>Sub Total: ₹1,334</p>
+            <p>Taxes (if applicable): ₹0</p>
+            <p>Discount: ₹0</p>
+            <h3>Total: ₹1,334</h3>
+            <button class="pay-now">Pay Now ₹1,334</button>
+            <div class="payment-icons">
+                <img src="razorpay.png" alt="Razorpay">
+                <img src="secure-icon.jpg" alt="Secure">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

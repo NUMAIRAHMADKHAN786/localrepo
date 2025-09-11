@@ -1,12 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>task 0</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-         <h1>Hello World!!</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six-Month Software Engineering Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="light">
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle dark/light mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <h1 class="header-title">Six-Month Software Engineering Roadmap</h1>
+                    <p class="header-subtitle">Master full-stack development in 180 days with 720-900 hours of focused learning</p>
+                </div>
+                <div class="progress-ring-container">
+                    <div class="progress-ring">
+                        <svg class="progress-ring-svg" width="120" height="120">
+                            <circle
+                                class="progress-ring-bg"
+                                stroke="currentColor"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="60"
+                                cy="60"/>
+                            <circle
+                                class="progress-ring-progress"
+                                stroke="currentColor"
+                                stroke-width="8"
+                                fill="transparent"
+                                r="52"
+                                cx="60"
+                                cy="60"/>
+                        </svg>
+                        <div class="progress-text">
+                            <span class="progress-percentage" id="overallProgress">0%</span>
+                            <span class="progress-label">Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="layout">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <div class="sidebar-content">
+                        <h3 class="sidebar-title">Learning Path</h3>
+                        <nav class="month-navigation">
+                            <button class="month-nav-item active" data-month="1">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">1</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">HTML, CSS & JS</span>
+                                    <span class="month-duration">Days 1-30</span>
+                                </div>
+                            </button>
+                            <button class="month-nav-item" data-month="2">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">2</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">MERN Stack</span>
+                                    <span class="month-duration">Days 31-60</span>
+                                </div>
+                            </button>
+                            <button class="month-nav-item" data-month="3">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">3</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">TypeScript & Next.js</span>
+                                    <span class="month-duration">Days 61-90</span>
+                                </div>
+                            </button>
+                            <button class="month-nav-item" data-month="4">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">4</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">System Design</span>
+                                    <span class="month-duration">Days 91-120</span>
+                                </div>
+                            </button>
+                            <button class="month-nav-item" data-month="5">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">5</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">DevOps & AI</span>
+                                    <span class="month-duration">Days 121-150</span>
+                                </div>
+                            </button>
+                            <button class="month-nav-item" data-month="6">
+                                <div class="month-progress-ring">
+                                    <svg width="40" height="40">
+                                        <circle class="month-ring-bg" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                        <circle class="month-ring-progress" stroke="currentColor" stroke-width="3" fill="transparent" r="16" cx="20" cy="20"/>
+                                    </svg>
+                                    <span class="month-number">6</span>
+                                </div>
+                                <div class="month-info">
+                                    <span class="month-title">DSA & Interviews</span>
+                                    <span class="month-duration">Days 151-180</span>
+                                </div>
+                            </button>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Content Area -->
+                <div class="content-area">
+                    <!-- Month Detail View -->
+                    <div class="month-detail active" id="month-1">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                <span class="month-badge-text">Month 1</span>
+                            </div>
+                            <h2 class="month-detail-title">HTML, CSS & JavaScript Mastery</h2>
+                            <p class="month-focus">Frontend Fundamentals • Days 1-30</p>
+                        </div>
+
+                        <!-- Success Criteria -->
+                        <div class="success-criteria">
+                            <h3 class="section-title">Success Criteria</h3>
+                            <div class="criteria-grid">
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">🚀</div>
+                                    <span>Deployed portfolio website with interactive features</span>
+                                </div>
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">🏗️</div>
+                                    <span>Master HTML5 semantic structure and accessibility</span>
+                                </div>
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">📱</div>
+                                    <span>Responsive CSS using Flexbox and Grid</span>
+                                </div>
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">⚡</div>
+                                    <span>JavaScript DOM manipulation and API integration</span>
+                                </div>
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">📚</div>
+                                    <span>Clean, maintainable code with documentation</span>
+                                </div>
+                                <div class="criterion-item">
+                                    <div class="criterion-icon">⚖️</div>
+                                    <span>Performance and accessibility scores >85 on Lighthouse</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Week 1 Details -->
+                        <div class="week-section">
+                            <div class="week-header">
+                                <h3 class="week-title">Week 1: HTML5 Fundamentals & Semantic Web</h3>
+                                <div class="week-progress-bar">
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span class="progress-text">0/7 days</span>
+                                </div>
+                            </div>
+
+                            <!-- Days -->
+                            <div class="days-grid">
+                                <div class="day-card" data-day="1">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-1" class="day-input">
+                                            <label for="day-1" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 1: HTML Document Structure & Basic Elements</h4>
+                                            <p class="day-time">2-3 hours (Morning: 1.5h theory, Evening: 1h practice)</p>
+                                        </div>
+                                        <div class="difficulty-badge beginner">Beginner</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Study HTML5 semantic elements: header, nav, main, section, article, aside, footer</li>
+                                                <li>Learn DOCTYPE declaration, meta tags, character encoding</li>
+                                                <li>Practice 20 basic HTML elements with proper nesting</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Single-page HTML document with personal bio</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Create valid HTML that passes W3C validator</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">HTML</span>
+                                            <span class="tag">Semantic</span>
+                                            <span class="tag">Structure</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="2">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-2" class="day-input">
+                                            <label for="day-2" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 2: Forms, Tables & Media Elements</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge beginner">Beginner</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Master form elements: input, textarea, select, button, validation attributes</li>
+                                                <li>Learn table structure: table, thead, tbody, tr, th, td</li>
+                                                <li>Practice embedding images, videos, audio with proper attributes</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Contact form + skills table integrated into profile page</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Functional form with 5 input types and validation</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">HTML</span>
+                                            <span class="tag">Forms</span>
+                                            <span class="tag">Tables</span>
+                                            <span class="tag">Media</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="3">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-3" class="day-input">
+                                            <label for="day-3" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 3: Hyperlinks, Navigation & Accessibility</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge intermediate">Intermediate</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Study link types: internal, external, email, phone, anchor links</li>
+                                                <li>Learn accessibility attributes: alt text, ARIA labels, semantic landmarks</li>
+                                                <li>Practice keyboard navigation and screen reader compatibility</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Fully accessible navigation system</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Lighthouse accessibility score > 90</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">HTML</span>
+                                            <span class="tag">Accessibility</span>
+                                            <span class="tag">Navigation</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="4">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-4" class="day-input">
+                                            <label for="day-4" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 4: HTML5 APIs & Advanced Elements</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge intermediate">Intermediate</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Explore HTML5 APIs: Geolocation, Local Storage, Canvas basics</li>
+                                                <li>Learn progress bars, details/summary, meter elements</li>
+                                                <li>Study data attributes and their JavaScript integration</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Interactive elements with HTML5 APIs</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Working geolocation and progress features</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">HTML5</span>
+                                            <span class="tag">APIs</span>
+                                            <span class="tag">Interactive</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="5">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-5" class="day-input">
+                                            <label for="day-5" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 5: HTML Project Planning & Architecture</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge intermediate">Intermediate</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Learn HTML project structure and file organization</li>
+                                                <li>Study naming conventions and folder hierarchies</li>
+                                                <li>Plan multi-page website architecture</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Complete site architecture documentation</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Site map and wireframes for portfolio</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">Planning</span>
+                                            <span class="tag">Architecture</span>
+                                            <span class="tag">Organization</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="6">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-6" class="day-input">
+                                            <label for="day-6" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 6: Multi-page Website Development</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge intermediate">Intermediate</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Build 4 additional pages: About, Projects, Blog, Contact</li>
+                                                <li>Implement consistent navigation across all pages</li>
+                                                <li>Practice internal linking and URL structure</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>5-page website with working navigation</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>All links functional, validated HTML</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">Multi-page</span>
+                                            <span class="tag">Navigation</span>
+                                            <span class="tag">Structure</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="day-card" data-day="7">
+                                    <div class="day-header">
+                                        <div class="day-checkbox">
+                                            <input type="checkbox" id="day-7" class="day-input">
+                                            <label for="day-7" class="checkbox-label">
+                                                <div class="checkbox-custom"></div>
+                                            </label>
+                                        </div>
+                                        <div class="day-info">
+                                            <h4 class="day-title">Day 7: HTML Review & Testing</h4>
+                                            <p class="day-time">2-3 hours</p>
+                                        </div>
+                                        <div class="difficulty-badge review">Review</div>
+                                    </div>
+                                    <div class="day-content">
+                                        <div class="objectives">
+                                            <h5>Objectives:</h5>
+                                            <ul>
+                                                <li>Review all HTML concepts through practice exercises</li>
+                                                <li>Complete 25 HTML challenges on coding platforms</li>
+                                                <li>Debug and fix common HTML errors</li>
+                                            </ul>
+                                        </div>
+                                        <div class="deliverable">
+                                            <h5>Deliverable:</h5>
+                                            <p>Polished HTML-only portfolio website</p>
+                                        </div>
+                                        <div class="assessment">
+                                            <h5>Assessment:</h5>
+                                            <p>Pass HTML fundamentals quiz (85% minimum)</p>
+                                        </div>
+                                        <div class="tags">
+                                            <span class="tag">Review</span>
+                                            <span class="tag">Testing</span>
+                                            <span class="tag">Assessment</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Month Views (simplified for now) -->
+                    <div class="month-detail" id="month-2">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #10b981 0%, #047857 100%);">
+                                <span class="month-badge-text">Month 2</span>
+                            </div>
+                            <h2 class="month-detail-title">MERN Stack Development</h2>
+                            <p class="month-focus">Full-Stack Web Development • Days 31-60</p>
+                        </div>
+                        <div class="coming-soon">
+                            <div class="coming-soon-icon">🚧</div>
+                            <h3>Coming Soon</h3>
+                            <p>Detailed curriculum for MERN Stack Development will be available soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="month-detail" id="month-3">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);">
+                                <span class="month-badge-text">Month 3</span>
+                            </div>
+                            <h2 class="month-detail-title">TypeScript & Next.js Mastery</h2>
+                            <p class="month-focus">Type-Safe Modern React • Days 61-90</p>
+                        </div>
+                        <div class="coming-soon">
+                            <div class="coming-soon-icon">🚧</div>
+                            <h3>Coming Soon</h3>
+                            <p>Detailed curriculum for TypeScript & Next.js will be available soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="month-detail" id="month-4">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
+                                <span class="month-badge-text">Month 4</span>
+                            </div>
+                            <h2 class="month-detail-title">System Design & CSS Frameworks</h2>
+                            <p class="month-focus">Architecture & Advanced Styling • Days 91-120</p>
+                        </div>
+                        <div class="coming-soon">
+                            <div class="coming-soon-icon">🚧</div>
+                            <h3>Coming Soon</h3>
+                            <p>Detailed curriculum for System Design will be available soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="month-detail" id="month-5">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);">
+                                <span class="month-badge-text">Month 5</span>
+                            </div>
+                            <h2 class="month-detail-title">DevOps & AI-Powered Development</h2>
+                            <p class="month-focus">Modern Development Workflow • Days 121-150</p>
+                        </div>
+                        <div class="coming-soon">
+                            <div class="coming-soon-icon">🚧</div>
+                            <h3>Coming Soon</h3>
+                            <p>Detailed curriculum for DevOps & AI will be available soon.</p>
+                        </div>
+                    </div>
+
+                    <div class="month-detail" id="month-6">
+                        <div class="month-header">
+                            <div class="month-badge" style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);">
+                                <span class="month-badge-text">Month 6</span>
+                            </div>
+                            <h2 class="month-detail-title">DSA Mastery & Interview Preparation</h2>
+                            <p class="month-focus">Technical Interview Readiness • Days 151-180</p>
+                        </div>
+                        <div class="coming-soon">
+                            <div class="coming-soon-icon">🚧</div>
+                            <h3>Coming Soon</h3>
+                            <p>Detailed curriculum for DSA & Interviews will be available soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Celebration Animation Container -->
+    <div class="celebration" id="celebration"></div>
+
+    <script src="app.js"></script>
+</body>
 </html>
