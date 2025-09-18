@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Services - Revitalize Your Clothes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <h3 style="color:black">Laundry Service </h3>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        Revitalize Your Clothes with Expert 
+                        <span class="text-blue">Laundry Services!</span>
+                    </h1>
+                    <p class="hero-description">
+                        From premium dry cleaning to swift wash and fold, we deliver care and convenience. 
+                        Schedule a pickup and rediscover the freshness of your clothes today!
+                    </p>
+                    <button class="btn-primary hero-btn" onclick="scrollToServices()">Book a service today</button>
+                </div>
+                <div class="hero-right">
+                    <div class="washing-machine-illustration">
+                        <div class="washing-machine">
+                            <div class="machine-body">
+                                <div class="machine-door">
+                                    <div class="door-handle"></div>
+                                    <div class="door-glass"></div>
+                                </div>
+                                <div class="machine-controls">
+                                    <div class="control-knob"></div>
+                                    <div class="control-buttons">
+                                        <div class="btn-small"></div>
+                                        <div class="btn-small"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detergent-boxes">
+                            <div class="detergent-box box-1">
+                                <div class="box-label">DETERGENT</div>
+                            </div>
+                            <div class="detergent-box box-2">
+                                <div class="box-label">SOFTENER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements-content">
+                <h2 class="achievements-title">Our Achievements</h2>
+                <div class="achievements-stats">
+                    <div class="stat">15+ Laundry Services</div>
+                    <div class="stat">240+ Happy Customers</div>
+                    <div class="stat">2+ Yrs Experience</div>
+                </div>
+                <div class="pink-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="services-content">
+                <!-- Left Side - Services List -->
+                <div class="services-left">
+                    <h2 class="services-title">Our Services</h2>
+                    <p class="services-subtitle">Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    
+                    <div class="services-list">
+                        <div class="service-item" data-id="1">
+                            <div class="service-info">
+                                <span class="service-icon">🧹</span>
+                                <span class="service-name">Dry Cleaning</span>
+                                <span class="service-price">₹200.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(1)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(1)">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="service-item" data-id="2">
+                            <div class="service-info">
+                                <span class="service-icon">🧺</span>
+                                <span class="service-name">Wash & Fold</span>
+                                <span class="service-price">₹100.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(2)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(2)">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="service-item" data-id="3">
+                            <div class="service-info">
+                                <span class="service-icon">👕</span>
+                                <span class="service-name">Ironing</span>
+                                <span class="service-price">₹30.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(3)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(3)">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="service-item" data-id="4">
+                            <div class="service-info">
+                                <span class="service-icon">🌟</span>
+                                <span class="service-name">Stain Removal</span>
+                                <span class="service-price">₹500.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(4)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(4)">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="service-item" data-id="5">
+                            <div class="service-info">
+                                <span class="service-icon">👜</span>
+                                <span class="service-name">Leather & Suede Cleaning</span>
+                                <span class="service-price">₹999.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(5)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(5)">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="service-item" data-id="6">
+                            <div class="service-info">
+                                <span class="service-icon">👰</span>
+                                <span class="service-name">Wedding Dress Cleaning</span>
+                                <span class="service-price">₹2500.00</span>
+                            </div>
+                            <div class="service-buttons">
+                                <button class="btn-remove" onclick="removeFromCart(6)">Remove Item</button>
+                                <button class="btn-add" onclick="addToCart(6)">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="cart-instruction">Add the items to the cart and book now</p>
+                </div>
+
+                <!-- Right Side - Cart and Booking -->
+                <div class="services-right">
+                    <div class="cart-section">
+                        <h3 class="cart-title">Added Items</h3>
+                        <div class="cart-header">
+                            <span>S.No</span>
+                            <span>Service Name</span>
+                            <span>Price</span>
+                        </div>
+                        <div id="cart-items" class="cart-items">
+                            <!-- Cart items will be populated by JavaScript -->
+                        </div>
+                        <div class="total-section">
+                            <div class="total-label">Total Amount</div>
+                            <div class="total-amount">₹<span id="total-amount">0.00</span></div>
+                        </div>
+                    </div>
+
+                    <div class="booking-form">
+                        <h3 class="form-title">Book Now</h3>
+                        <form id="booking-form">
+                            <div class="form-group">
+                                <input type="text" id="fullName" placeholder="Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email ID" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number" required>
+                            </div>
+                            <button type="submit" class="btn-primary book-btn">Book now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Features Section -->
+    <section id="about" class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h4 class="feature-title">Premium Services</h4>
+                    <p class="feature-description">High-quality laundry care</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h4 class="feature-title">Quick Support</h4>
+                    <p class="feature-description">Fast customer support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h4 class="feature-title">Hassle Free Delivery</h4>
+                    <p class="feature-description">Convenient pickup and delivery</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h4 class="feature-title">Affordable Prices</h4>
+                    <p class="feature-description">Competitive pricing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Subscribe to our newsletter</h2>
+                <div class="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email">
+                    <button class="newsletter-btn" onclick="subscribeNewsletter()">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 style="color:black">Laundry Service </h3> 
+                    <p class="footer-about">About us</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Important Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                        <li><a href="#terms">Terms of use</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <p class="contact-info">📞 +91 9876543210</p>
+                    <p class="contact-info">✉️ info@laundryservice.com</p>
+                    <h4 class="footer-heading">Follow us</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank">📘 Facebook</a>
+                        <a href="#" target="_blank">🐦 Twitter</a>
+                        <a href="#" target="_blank">📸 Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Messages -->
+    <div id="message-overlay" class="message-overlay hidden">
+        <div class="message-content">
+            <p id="message-text"></p>
+            <button onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
