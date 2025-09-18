@@ -62,9 +62,9 @@ const person1 = {
 };
 const person2 = { name: 'Ria', address: { city: 'Mumbai' } }; // no contact
 
-// safely access phone with optional chaining
+
 console.log('Q7 person1 phone:', person1.contact?.phone ?? 'Phone not available');
 console.log('Q7 person2 phone:', person2.contact?.phone ?? 'Phone not available');
 
-// ...existing code...
+
 
